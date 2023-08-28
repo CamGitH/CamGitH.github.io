@@ -1,8 +1,12 @@
-/* Header */
+/* Estilos generales */
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
 }
+
+/* Header */
 .large-header {
   position: relative;
   width: 100%;
@@ -12,34 +16,17 @@ body {
   background-position: center center;
   z-index: 1;
 }
-/*
-#large-header {
-  background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/main_image_deep_field_smacs0723-5mb.jpg");
-}
-*/
+
 .main-title {
   position: absolute;
-  margin: 0;
-  padding: 0;
   color: #ffffff;
   text-align: center;
-  top: 20%;
+  top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  transform: translate(-50%, -50%);
 }
-.demo-1 .main-title {
-  text-transform: uppercase;
-  font-size: 4.2em;
-  letter-spacing: 0.1em;
-}
-.main-title .thin {
-  font-weight: 200;
-}
-@media only screen and (max-width: 768px) {
-  .demo-1 .main-title {
-    font-size: 3em;
-  }
-}
+
+/* Navegación */
 .topnav {
   overflow: hidden;
   background-color: transparent;
@@ -62,4 +49,11 @@ body {
 .topnav a.active {
   background-color: #9cd8f975;
   color: white;
+}
+
+/* Responsive para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .main-title {
+    font-size: 2.5em;
+  }
 }
