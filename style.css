@@ -49,19 +49,19 @@ body {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://www.stockvault.net/data/2016/08/18/207762/preview16.jpg');
+  background-image: url('./images/preview16.jpg');
   min-height: 100%;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-2 {
-  background-image: url('https://lh5.googleusercontent.com/2Vv0P3SIheWS9CTqwXzLhGJ2zoBClEyzpcPfCgae0-snOn4VspdCnNhjHRnIHXcheVvZNP0Cbb07V5QEiivIc5W4K3wlOgB0UgTBuX0KlI_EEdeSxaQ8fFvjqqeq2BdJoYZ_ojhT');
+  background-image: url('./images/1_software-developer.jpg');
   min-height: 100%;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-3 {
-  background-image: url('https://blog.se.com/br/wp-content/uploads/2020/02/Data-Center-Outlook-768x550-1-300x215.png');
+  background-image: url('./images/Data-Center-Outlook-768x550-1-300x215.png');
   min-height: 100%;
 }
 
