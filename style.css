@@ -1,59 +1,78 @@
-/* Estilos generales */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  font-family: 'Montserrat', sans-serif;
+  background-color: gray;
+  color: #eee;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: orangered;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
 
-/* Header */
-.large-header {
-  position: relative;
-  width: 100%;
-  background: #333;
-  overflow: hidden;
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  z-index: 1;
 }
 
-.main-title {
-  position: absolute;
-  color: #ffffff;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://www.stockvault.net/data/2016/08/18/207762/preview16.jpg');
+  min-height: 100%;
 }
 
-/* Navegación */
-.topnav {
-  overflow: hidden;
-  background-color: transparent;
+/* First image (Logo. Full height) */
+.bgimg-2 {
+  background-image: url('https://lh5.googleusercontent.com/2Vv0P3SIheWS9CTqwXzLhGJ2zoBClEyzpcPfCgae0-snOn4VspdCnNhjHRnIHXcheVvZNP0Cbb07V5QEiivIc5W4K3wlOgB0UgTBuX0KlI_EEdeSxaQ8fFvjqqeq2BdJoYZ_ojhT');
+  min-height: 100%;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+/* First image (Logo. Full height) */
+.bgimg-3 {
+  background-image: url('https://blog.se.com/br/wp-content/uploads/2020/02/Data-Center-Outlook-768x550-1-300x215.png');
+  min-height: 100%;
 }
 
-.topnav a:hover {
-  background-color: #dddddd79;
-  color: black;
-}
 
-.topnav a.active {
-  background-color: #9cd8f975;
-  color: white;
-}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
-/* Responsive para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-  .main-title {
-    font-size: 2.5em;
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
   }
 }
