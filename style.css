@@ -65,6 +65,21 @@ body {
   min-height: 100%;
 }
 
+/* First image (Logo. Full height) */
+.logo-1 {
+  background-image: url('./images/elastic-logo.jpg');
+  width: 5%;
+}
+
+/* First image (Logo. Full height) */
+.logo-2 {
+  background-image: url('./images/Microsoft-Azure.jpg');
+}
+
+/* First image (Logo. Full height) */
+.logo-3 {
+  background-image: url('./images/powerplatform.png');
+}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
